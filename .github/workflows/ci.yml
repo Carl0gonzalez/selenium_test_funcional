@@ -16,13 +16,17 @@ jobs:
           python -m venv venv
           source venv/bin/activate
           pip install -r requirements.txt
-      - name: Download ChromeDriver
+      - name: Download & install ChromeDriver
         run: |
           sudo apt-get update
           sudo apt-get install -y unzip
-          wget -qO chromedriver.zip https://chromedriver.storage.googleapis.com/$(wget -qO- https://chromedriver.storage.googleapis.com/LATEST_RELEASE)/chromedriver_linux64.zip
-          unzip chromedriver.zip
-          sudo mv chromedriver /usr/local/bin/
+          # Descarga la última versión de ChromeDriver
+          LATEST=$(wget -qO- https://chromedriver.storage.googleapis.com/LATEST_RELEASE)
+          wget -qO chromedriver.zip "https://chromedriver.storage.googleapis.com/${LATEST}/chromedriver_linux64.zip"
+          # -o para sobrescribir sin preguntar
+          unzip -o chromedriver.zip
+          # -f para forzar el mv
+          sudo mv -f chromedriver /usr/local/bin/
       - name: Run tests
         run: |
           source venv/bin/activate
