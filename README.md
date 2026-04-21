@@ -1,33 +1,22 @@
 # 🤖 selenium_test_funcional
 
-Repositorio de **testing funcional automatizado con Selenium**, orientado a validar flujos de usuario desde el navegador.
+Repositorio de **testing funcional automatizado con Selenium**, orientado a validar flujos de usuario sobre interfaz web.
 
 ![Selenium](https://img.shields.io/badge/Selenium-automation-43B02A?logo=selenium)
 
----
+## Descripción
 
-## 📌 Objetivo
+Está pensado para automatizar escenarios de navegación, interacción y validación funcional desde el navegador, aportando evidencia de trabajo QA.
 
-Automatizar pruebas funcionales sobre interfaces web para verificar navegación, interacción y comportamiento esperado.
+## Objetivo
 
-## 🧩 Qué permite mostrar
+Practicar y documentar pruebas funcionales repetibles sobre aplicaciones web.
 
-- Automatización E2E básica.
-- Validación de casos de uso reales.
-- Enfoque de QA sobre interfaz.
+## Uso
 
-## ▶️ Uso general
+Configura el navegador o driver requerido y ejecuta el flujo de pruebas definido en el repositorio.
 
-```bash
-git clone git@github.com:Carl0gonzalez/selenium_test_funcional.git
-cd selenium_test_funcional
-```
-
-## 💡 Valor del proyecto
-
-Aporta evidencia concreta de interés por testing funcional y automatización de calidad.
-
-## 👤 Autor
+## Autor
 
 **Carlo González**
 
